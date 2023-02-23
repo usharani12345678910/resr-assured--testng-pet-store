@@ -1,0 +1,17 @@
+# Author: JALA Academy. A Platform to learn anything with almost zero dependency on the trainers.
+#Root logger option will help to log the system generated logs in system.txt file
+
+log4j.rootLogger=debug,file
+# debug is the Logger level and file is used as an identifier
+
+log4j.appender.file=org.apache.log4j.RollingFileAppender
+# appender type is defined as RollingFileAppender
+
+log4j.appender.file.File=./log/testlog.log
+# The location of file is mentioned where the system generated logs will get saved
+
+log4j.appender.file.maxFileSize=5000KB
+# maxFileSize denotes that after every 5000KB a new file will be created
+
+log4j.appender.file.maxBackupIndex=1
+# maxBackupIndex defines the number of backup files to be created
